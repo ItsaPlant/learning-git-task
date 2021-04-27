@@ -4,8 +4,7 @@ shops = {
 }
 
 length = 0
-for shop in shops.keys():
-    items = shops[shop]
+for shop, items in shops.items():
     items = [item.capitalize() for item in items]
     length = length + len(items)
     print(f"I go to {shop.capitalize()} and buy some {items}")
